@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("p1").click(function (event) {
+                $("span").text(event.timeStamp);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p>If you click on me, I will disappear.</p>
+    <p1>Click me away!</p>
+        <p1>Click me too!</p>
+            <p1>The click event occurred <span style="color:red">unknown</span> milliseconds</p>
+</body>
+
+</html>

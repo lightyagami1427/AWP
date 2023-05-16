@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptotrac / Price Tracking</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            background: url("https://wallpapercave.com/wp/wp7043567.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: none;
+            background-attachment: fixed;
+            scroll-behavior: smooth;
+        }
+
+        .hero1 {
+            background-size: cover;
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .one img {
+            height: 50px;
+            width: 50px;
+            margin-left: 10px;
+            margin-top: -10px;
+        }
+
+        .one {
+            margin-top: 50px;
+            margin-left: 10px;
+        }
+
+        .one h1 {
+            color: rgb(0, 234, 255);
+        }
+
+        .one h1 span {
+            color: white;
+        }
+
+        .cardlu img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .cardlu {
+            width: 350px;
+            height: 200px;
+            background-image: linear-gradient(to bottom, white, rgb(221, 221, 221));
+            border-radius: 10px;
+            margin: 10px 10px 10px 10px;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .cardlu p {
+            font-size: 20px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero1">
+        <div class="navbar">
+            <nav>
+                <div style="display:flex;margin-top:10px">
+                    <img src="https://freepngimg.com/thumb/bitcoin/59530-cryptocurrency-wallet-blockchain-bitcoin-logo-free-download-png-hq.png"
+                        style="width:30px;height:30px;margin-right:5px;border:2px solid black;border-radius:15px">
+                    <p style="font-family:cambria;color:rgb(255, 255, 255);font-weight:bold;font-size:24px;">
+                        CRYPTOTRAC
+                    </p>
+                </div>
+                <ul>
+                    <li><a href="pro.html">Home</a></li>
+                    <li><a href="#">Price Tracking</a></li>
+                    <li><a href="coins_info.html">Coins Info</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="one" style="display:flex">
+            <h1>LIVE <span> PRICE TRACKING</span></h1>
+            <img src="https://www.pinclipart.com/picdir/big/157-1577919_analytics-line-graph-icon-png-clipart.png">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <div class="row1" style="display:flex;margin-left:20px">
+                <div class="cardlu">
+                    <img src="https://logodownload.org/wp-content/uploads/2017/06/bitcoin-logo-1-1.png">
+                    <div>
+                        <h1>Bitcoin (BTC)</h1>
+                        <p>Price: $<span id="bitcoin"></span> USD </p>
+                        <p>Invented Year: 2009</p>
+                    </div>
+                </div>
+                <div class="cardlu">
+
+                    <img
+                        src="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/1024/Ethereum-ETH-icon.png">
+                    <div>
+                        <h1>Ethereum (ETH)</h1>
+                        <p>Price: $<span id="ethereum"></span> USD </p>
+                        <p>Invented Year: 2015 </p>
+                    </div>
+                </div>
+                <div class="cardlu">
+                    <img src="https://cyberfmradio.com/img/claim/bsc.png">
+                    <div>
+                        <h1>Binance Coin (BNB)</h1>
+                        <p>Price: $<span id="binancecoin"></span> USD </p>
+                        <p>Invented Year: 2017 </p>
+                    </div>
+                </div>
+                <div class="cardlu">
+                    <img src="https://coinivore.com/wp-content/uploads/2020/11/Tether-USDT.png">
+                    <div>
+                        <h1>Tether (USDT)</h1>
+                        <p>Price: $ <span id="tether"></span> USD </p>
+                        <p>Invented Year: 2014</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row1" style="display:flex;margin-left:20px">
+                <div class="cardlu">
+                    <img
+                        src="https://cdn3d.iconscout.com/3d/premium/thumb/cardano-ada-cryptocurrency-5108592-4263929.png">
+                    <div>
+                        <h1>Cardano (ADA)</h1>
+                        <p>Price: $ <span id="cardano"></span> USD </p>
+                        <p>Invented Year: 2015</p>
+                    </div>
+                </div>
+                <div class="cardlu">
+                    <img src="https://logos-download.com/wp-content/uploads/2018/04/DogeCoin_logo_dog.png">
+                    <div>
+                        <h1>Doge Coin (DOGE)</h1>
+                        <p>Price: $<span id="dogecoin"></span> USD </p>
+                        <p>Invented Year: 2013 </p>
+                    </div>
+                </div>
+                <div class="cardlu">
+                    <img src="https://cdn3d.iconscout.com/3d/premium/thumb/solana-4437052-3684819.png">
+                    <div>
+                        <h1>Solana (SOL)</h1>
+                        <p>Price: $<span id="solana"></span> USD </p>
+                        <p>Invented Year: 2013 </p>
+                    </div>
+                </div>
+                <div class="cardlu">
+                    <img
+                        src="https://vignette.wikia.nocookie.net/cryptocurrency/images/5/5d/Litecoin.png/revision/latest?cb=20140316100431">
+                    <div>
+                        <h1>Lite Coin (LTC)</h1>
+                        <p>Price: $<span id="litecoin"></span> USD </p>
+                        <p>Invented Year: 2013 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
